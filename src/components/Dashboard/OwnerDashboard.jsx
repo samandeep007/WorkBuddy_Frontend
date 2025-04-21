@@ -24,7 +24,7 @@ export default function UserDashboard() {
     try {
       setLoading(true);
       const response = await axios.post(
-        `http://localhost:3000/api/properties/my-properties?page=${page}`,
+        `https://workbuddy-backend.onrender.com/api/properties/my-properties?page=${page}`,
         {},
         { withCredentials: true }
       );

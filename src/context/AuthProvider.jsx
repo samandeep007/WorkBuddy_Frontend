@@ -9,7 +9,7 @@ export default function AuthProvider({ children }) {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/auth/me', { withCredentials: true });
+        const response = await axios.get('https://workbuddy-backend.onrender.com/api/auth/me', { withCredentials: true });
         setUser(response.data.user);
       } catch (error) {
         setUser(null);

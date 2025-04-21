@@ -54,7 +54,7 @@ const PropertyForm = () => {
     images.forEach((image) => formData.append("images", image));
   
     try {
-      await axios.post("http://localhost:3000/api/properties/", formData, {
+      await axios.post("https://workbuddy-backend.onrender.com/api/properties/", formData, {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });

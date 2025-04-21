@@ -9,7 +9,7 @@ export default function Navbar() {
 
   const handleLogout = async () => {
     try {
-      await axios.post('http://localhost:3000/api/auth/logout', {}, { withCredentials: true });
+      await axios.post('https://workbuddy-backend.onrender.com/api/auth/logout', {}, { withCredentials: true });
       setUser(null);
       navigate('/login');
     } catch (error) {

@@ -25,7 +25,7 @@ export default function Register() {
     }
 
     try {
-      await axios.post('http://localhost:3000/api/auth/register', { fullName, email, username, password, isOwner, phone });
+      await axios.post('https://workbuddy-backend.onrender.com/api/auth/register', { fullName, email, username, password, isOwner, phone });
       navigate('/login');
     } catch (error) {
       console.error('Registration error:', error);

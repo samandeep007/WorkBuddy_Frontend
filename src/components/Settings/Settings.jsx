@@ -44,7 +44,7 @@ const Settings = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/update-user', form, {
+      const response = await axios.post('https://workbuddy-backend.onrender.com/api/auth/update-user', form, {
         headers: { 'Content-Type': 'multipart/form-data' },
         withCredentials: true,
       });
@@ -64,7 +64,7 @@ const Settings = () => {
     setLoading(true);
 
     try {
-      await axios.post('http://localhost:3000/api/auth/change-password', {
+      await axios.post('https://workbuddy-backend.onrender.com/api/auth/change-password', {
         currentPassword,
         newPassword,
       }, { withCredentials: true });

@@ -22,7 +22,7 @@ export default function UserDashboard() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:3000/api/properties/all-properties?page=${page}`
+        `https://workbuddy-backend.onrender.com/api/properties/all-properties?page=${page}`
       );
       const data = response.data.data;
       setProperties(data.properties);

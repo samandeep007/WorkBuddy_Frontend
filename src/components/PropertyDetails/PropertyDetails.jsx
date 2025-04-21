@@ -31,12 +31,12 @@ const PropertyDetails = () => {
     const fetchProperty = async () => {
       try {
         setLoading(true);
-        const response = await axios.post(`http://localhost:3000/api/properties/view/${propertyId}`, {}, { withCredentials: true });
+        const response = await axios.post(`https://workbuddy-backend.onrender.com/api/properties/view/${propertyId}`, {}, { withCredentials: true });
         setProperty(response.data.data);
 
         // Fetch owner details
         if (response.data.data.owner) {
-          const ownerResponse = await axios.post(`http://localhost:3000/api/auth/user/${response.data.data.owner}`, {}, { withCredentials: true });
+          const ownerResponse = await axios.post(`https://workbuddy-backend.onrender.com/api/auth/user/${response.data.data.owner}`, {}, { withCredentials: true });
           setOwnerDetails(ownerResponse.data.data);
         }
         setLoading(false);

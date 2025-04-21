@@ -33,7 +33,7 @@ const EditPropertyDetails = () => {
   useEffect(() => {
     const fetchProperty = async () => {
       try {
-        const response = await axios.post(`http://localhost:3000/api/properties/view/${propertyId}`, {}, { withCredentials: true });
+        const response = await axios.post(`https://workbuddy-backend.onrender.com/api/properties/view/${propertyId}`, {}, { withCredentials: true });
         setProperty(response.data.data);
         setLoading(false);
       } catch (error) {
@@ -103,7 +103,7 @@ const EditPropertyDetails = () => {
     newImages.forEach((image) => formData.append("images", image));
 
     try {
-      await axios.patch(`http://localhost:3000/api/properties/edit/${propertyId}`, formData, {
+      await axios.patch(`https://workbuddy-backend.onrender.com/api/properties/edit/${propertyId}`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
         withCredentials: true,
       });
@@ -116,7 +116,7 @@ const EditPropertyDetails = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3000/api/properties/${propertyId}`, { withCredentials: true });
+      await axios.delete(`https://workbuddy-backend.onrender.com/api/properties/${propertyId}`, { withCredentials: true });
       navigate("/");
     } catch (error) {
       console.error("Error deleting property", error);

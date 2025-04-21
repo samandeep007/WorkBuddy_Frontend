@@ -14,7 +14,7 @@ export default function Login() {
 
   const handleSubmit = async () => {
     try {
-      const response = await axios.post('http://localhost:3000/api/auth/login', { identifier, password }, { withCredentials: true });
+      const response = await axios.post('https://workbuddy-backend.onrender.com/api/auth/login', { identifier, password }, { withCredentials: true });
       setUser(response.data.loggedInUser);
       navigate('/');
       window.location.reload();
