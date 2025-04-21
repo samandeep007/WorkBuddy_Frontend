@@ -30,8 +30,8 @@ export default function Login() {
         <div className="relative flex items-end px-4 pb-10 pt-60 sm:px-6 sm:pb-16 md:justify-center lg:px-8 lg:pb-24">
           <div className="absolute inset-0">
             <img
-              className="h-screen w-full rounded-md object-cover object-top"
-              src="assets/HeroBackground.jpg"
+              className="h-full w-full rounded-md object-cover object-top"
+              src="./src/assets/HeroBackground.jpg"
               alt=""
             />
           </div>
