@@ -30,8 +30,8 @@ export default function Login() {
         <div className="relative flex items-end px-4 pb-10 pt-60 sm:px-6 sm:pb-16 md:justify-center lg:px-8 lg:pb-24">
           <div className="absolute inset-0">
             <img
-              className="h-full w-full rounded-md object-cover object-top"
-              src="https://images.unsplash.com/photo-1534120247760-c44c3e4a62f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTk0fHxkZXNpZ25lcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+              className="h-screen w-full rounded-md object-cover object-top"
+              src="assets/HeroBackground.jpg"
               alt=""
             />
           </div>
