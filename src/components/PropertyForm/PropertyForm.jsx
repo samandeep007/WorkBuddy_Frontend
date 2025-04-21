@@ -73,7 +73,7 @@ const PropertyForm = () => {
         {/* Image Section */}
         <div className="w-full md:w-1/2">
           <img
-            src="../src/assets/space.jpg"
+            src="assets/space.jpg"
             alt="Property Image"
             className="object-cover w-full h-64 md:h-full"
           />
