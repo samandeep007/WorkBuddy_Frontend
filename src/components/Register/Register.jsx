@@ -40,7 +40,7 @@ export default function Register() {
           <div className="absolute inset-0">
             <img
               className="h-full w-full rounded-md object-cover object-top"
-              src="./assets/SignUpBackground.jpg"
+              src="assets/SignUpBackground.jpg"
               alt=""
             />
           </div>

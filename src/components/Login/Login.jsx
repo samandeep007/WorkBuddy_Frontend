@@ -31,7 +31,7 @@ export default function Login() {
           <div className="absolute inset-0">
             <img
               className="w-full rounded-md object-cover object-top"
-              src="./assets/HeroBackground.jpg"
+              src="assets/HeroBackground.jpg"
               alt=""
             />
           </div>
